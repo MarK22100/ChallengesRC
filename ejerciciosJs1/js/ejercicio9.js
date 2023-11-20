@@ -1,10 +1,14 @@
-//Ejercicio 1
-alert("un mensaje");
+document.getElementById('button9').addEventListener('click', button9)
 
-//Ejercicio2
-//Escritura en pantalla
-document.write("Hello world<br>");
+function button9(){
 
-//Ejercicio3
-document.write(parseInt(5)+parseInt(3));
+let frase = prompt("Escribe una frase a extraerle las vocales")
+let vocales = frase.match(/[aeiou]/gi);
 
+if (vocales) {
+    document.write('Las vocales en la frase son: '+ vocales)
+}
+else{
+    document.write('La frase no contienen vocales.')
+}
+}

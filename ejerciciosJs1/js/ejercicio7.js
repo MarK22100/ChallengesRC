@@ -1,10 +1,13 @@
-//Ejercicio 1
-alert("un mensaje");
+document.getElementById('button7').addEventListener('click', button7)
 
-//Ejercicio2
-//Escritura en pantalla
-document.write("Hello world<br>");
+function button7() {
+    
+let num1 = parseInt(prompt('Ingresa un numero'));
+let num2 = parseInt(prompt('Ingresa un numero'));
+let num3 = parseInt(prompt('Ingresa un numero'));
 
-//Ejercicio3
-document.write(parseInt(5)+parseInt(3));
+let numMax = Math.max(num1, num2, num3)
+document.write('El numero de mayor valor es el: ', numMax);
+
+}
 

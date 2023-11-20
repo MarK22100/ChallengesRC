@@ -1,10 +1,13 @@
-//Ejercicio 1
-alert("un mensaje");
 
-//Ejercicio2
-//Escritura en pantalla
-document.write("Hello world<br>");
+document.getElementById('button8').addEventListener('click', button8)
 
-//Ejercicio3
-document.write(parseInt(5)+parseInt(3));
+function button8() {
+    let numero =parseFloat(prompt("Ingrese un número:"));
+
+    if (numero % 2 === 0) {
+        document.write('El '+ numero + " es divisible por 2.");
+    } else {
+        document.write('El '+ numero + " no es divisible por 2.");
+    }
+}
 
